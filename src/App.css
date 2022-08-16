@@ -13,13 +13,13 @@
   }
 }
 
-.App-header {
+.App {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,4 +35,125 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container{
+  width: 40%;
+  background: #d1cccc;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+.agregarTareas{
+  width: 100%;
+  background: #d1cccc;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.inputTareas{
+  width: 50%;
+  height: 40px;
+  font-size: 17px;
+  border: none;
+  font-family: monospace;
+  border-radius: 10px;
+  padding: 0px 10px;
+}
+.botonAgregar{
+  width: 30%;
+  height: 40px;
+  font-size: 17px;
+  border: none;
+  font-family: monospace;
+  font-weight: 400;
+  box-shadow: -1px 2px 33px 6px rgba(0,0,0,0.42);
+  -webkit-box-shadow: -1px 2px 33px 6px rgba(0,0,0,0.42);
+  -moz-box-shadow: -1px 2px 33px 6px rgba(0,0,0,0.42);
+  border-radius: 10px;
+}
+
+.botonAgregar:active{
+  box-shadow: none;
+}
+
+.botonEliminar{
+  cursor: pointer;
+  color: red;
+}
+
+.containerTareas{   
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.containerTituloTareas{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 83%;
+}
+
+.botonVaciar{
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: -1px 2px 33px 6px rgba(0,0,0,0.42);
+  -webkit-box-shadow: -1px 2px 33px 6px rgba(0,0,0,0.42);
+  -moz-box-shadow: -1px 2px 33px 6px rgba(0,0,0,0.42);
+  cursor: pointer;
+  user-select: none;
+}
+
+.botonVaciar:active{
+  box-shadow: none;
+}
+
+.tareasList{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tareasContenedor{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid #949393;
+}
+
+.tarea{
+    font-size: 20px;
+    font-family: monospace;
+    text-align: left;
+}
+
+.botones{
+  display: flex;
+}
+
+.tachado{
+  text-decoration: line-through;
+}
+
+.tick{
+  cursor: pointer;
+  user-select: none;
+}
+
+.botonEliminar{
+  user-select: none;
 }
